@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Comfortaa|Finger+Paint');
+
+body {
+    background-color: black;
+    font-family: 'Finger Paint', cursive;
+}
+
+header {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+}
+
+/* .info {
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(24, 24, 24);
+    padding: 25px;
+    margin: 5px;
+    color: #fff;
+    font-size: 26px;
+    vertical-align: center; 
+    height: 150px;
+}
+
+.info > span {
+    font-size: 150%;
+    display: block;
+    padding: 10px
+} */
+
+.title {
+    color: white;
+    margin: 5px;
+    background-color: rgb(24, 24, 24);
+    padding: 25px;
+}
+
+.title > span {
+    display: block;
+    font-size: 200%;
+}
+
+.code {
+    background: white;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 5px;
+    color: black;
+    white-space: pre;
+    font-size: 24px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.step-handler {
+  background: #ccc;
+  color: #555;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  margin: 80px ;
+  border-radius: 4px;
+  width: 200px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.step-handler:hover {
+  background: #bbb;
+  transform: scale(1.1);
+}
+
+.step-container {
+  margin: 3% auto;
+  text-align: center;
+}
+.step-container .step {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  text-align: center;
+  background: #000;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding-top: 30px;
+  transition: background 1000ms ease, color 1000ms ease;
+  transition-delay: 800ms;
+  background: linear-gradient(to right, #007bff 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  font-size: 25px;
+}
+
+.step-container .step.active {
+  background-position: left bottom;
+  color: #fff;
+}
+.step-container .step-separator {
+  position: relative;
+  z-index: 1;
+  background: #444;
+  height: 20px;
+  width: 100px;
+  margin: 0 -10px -10px -10px;
+  display: inline-block;
+  background: linear-gradient(to right, #0052aa 50%, rgba(255, 255, 255, 0.5) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background 1000ms ease;
+}
+.step-container .step-separator.active {
+  background-position: left bottom;
+}
+
+.handlers {
+    font-family: 'Bungee', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
